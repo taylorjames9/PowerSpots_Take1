@@ -30,6 +30,7 @@ public class GameDots_Manager : MonoBehaviour {
 	public void GenerateDots(){
 		for (int i = 0; i < numberOfSpots; i++) {
 			GameObject dizzyDot = (GameObject)Instantiate(dot);;
+			dizzyDot.visible.enadbled = false;
 			Vector3 dotPosition = new Vector3 (
 				                      Random.Range (xMin, xMax),
 				                      Random.Range (yMin, yMax),
@@ -40,7 +41,7 @@ public class GameDots_Manager : MonoBehaviour {
 			myListOfDots.Add (dizzyDot);
 
 		foreach (GameObject listDot in myListOfDots) {
-
+				listDot.visible.enabled = true;
 		}
 
 		}
