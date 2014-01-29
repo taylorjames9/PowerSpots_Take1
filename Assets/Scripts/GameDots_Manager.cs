@@ -14,7 +14,10 @@ public class GameDots_Manager : MonoBehaviour {
 	public float zMin = -2.0f;
 	public List<GameObject> myListOfDots = new List<GameObject> ();
 	
+    
 	// Use this for initialization
+    // Actually don't use this for initialization.
+
 	void Start () {
 		numberOfSpots = 10;
 		GenerateDots ();
